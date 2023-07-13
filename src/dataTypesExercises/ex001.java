@@ -9,8 +9,6 @@ public class ex001 {
 //    Insira um grau em Fahrenheit: 212
 //    Saída esperada :
 //    212,0 graus Fahrenheit é igual a 100,0 em Celsius
-
-
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -20,11 +18,7 @@ public class ex001 {
         System.out.println(entrada + "°F Convertido para Celsius é : " + conversorDeTemperatura(entrada) + "°C");
     }
     public static double conversorDeTemperatura(double entrada){
-
-
-        double conversor = (entrada -32) / 1.8;
-
-        return conversor;
+        return (entrada -32) / 1.8;
     }
 
 
