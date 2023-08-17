@@ -1,4 +1,4 @@
-package personal;
+package personal.stringBuilderBuffer;
 
 public class StringBuilderStringBuffer {
 
