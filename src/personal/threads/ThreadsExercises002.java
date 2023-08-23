@@ -1,18 +1,17 @@
 package personal.threads;
 
-public class ThreadsExercises002 extends Thread {
-
-        public static int amount = 0;
-
-        public static void main(String[] args) {
-            ThreadsExercises002 thread = new ThreadsExercises002();
-            thread.start();
-            System.out.println(amount);
-            amount++;
-            System.out.println(amount);
+    public class ThreadsExercises002 extends Thread {
+        public void run() {
+            for (int i = 1; i <= 5; i++) {
+                System.out.println("Thread " + Thread.currentThread().getId() + ": " + i);
+            }
         }
 
-    public void run() {
-        amount++;
+        public static void main(String[] args) {
+            ThreadsExercises002 thread1 = new ThreadsExercises002();
+            ThreadsExercises002 thread2 = new ThreadsExercises002();
+
+            thread1.start();
+            thread2.start();
+        }
     }
-}
